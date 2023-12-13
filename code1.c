@@ -2,9 +2,19 @@
 
 int main()
 {
-    int a = 10;
-    int b = 20;
-    int c = a + b;
-    printf("Sum of %d and %d is %d", a, b, c);
-    return 0;
+    int n;
+    scanf("%d", &n);
+
+    if(n > 0)
+    {
+        printf("Positive\n");
+    }
+    else if(n < 0)
+    {
+        printf("Negative\n");
+    }
+    else
+    {
+        printf("Zero\n");
+    }
 }
