@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
@@ -9,23 +8,23 @@ int main()
 
     int a[n];
 
-    for (i = 1; i <= n; i++)
+    for (i = 0; i < n; i++)
     {
-        printf("Enter element %d: ", i);
+        printf("Enter element %d: ", i + 1);
         scanf("%d", &a[i]);
     }
 
     printf("Array elements : ");
-    for (i = 1; i <= n; i++)
+    for (i = 0; i < n; i++)
     {
         printf("%d ", a[i]);
     }
 
-    int j, temp;
+    int k = n, j, temp;
 
-    for (i = 1; i <= n; i++)
+    for (i = 0; i < k; i++)
     {
-        for (j = 1; j <= n - i; j++)
+        for (j = 0; j < n - 1; j++)
         {
             if (a[j] > a[j + 1])
             {
@@ -37,7 +36,7 @@ int main()
     }
 
     printf("\nSorted elements : ");
-    for (i = 1; i <= n; i++)
+    for (i = 0; i < n; i++)
     {
         printf("%d ", a[i]);
     }
