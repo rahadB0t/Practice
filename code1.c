@@ -2,19 +2,21 @@
 
 int main()
 {
-    int n;
+    int n, i;
+    printf("Enter array size: ");
     scanf("%d", &n);
 
-    if(n > 0)
+    int a[n];
+
+    for(i=0;i<n;i++)
     {
-        printf("Positive\n");
+        printf("Enter element %d: ", i+1);
+        scanf("%d", &a[i]);
     }
-    else if(n < 0)
+
+    printf("Array elements : ");
+    for(i=0;i<n;i++)
     {
-        printf("Negative\n");
-    }
-    else
-    {
-        printf("Zero\n");
+        printf("%d ", a[i]);
     }
 }
